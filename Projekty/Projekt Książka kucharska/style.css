@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 0.5cm;
+  text-align: center;
+  width: 100%;
+}
+
+
+header>h1 {
+  font-style: italic;
+}
+
+:root {
+  background-color: aliceblue;
+}
+
+header>h2 {
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+
+header>h2::before,
+header>h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background: rgb(0, 0, 0);
+}
+
+header>h2::before {
+  left: -100px;
+}
+
+header>h2::after {
+  right: -100px;
+}
+
+nav {
+  width: 60%;
+  margin: auto;
+  margin-top: 0.5cm;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px dashed black;
+  padding: 20px;
+}
+
+nav>ul>li {
+  list-style: none;
+  display: inline;
+  margin: 40px;
+  font-size: 0.6cm;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav>ul>li:hover {
+  background-color:#f0f4f8;
+  box-shadow: 0px 2px 5px 5px dimgray;
+  border: 1px solid black;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+main {
+  padding: 2%;
+  margin-top: 1cm;
+  width: 80%;
+  height: auto;
+  float: right;
+}
+#dodaj
+{
+  margin-top: 0.5cm;
+}
+
+#obiad,
+#kolacja {
+  display: none;
+}
+
+section {
+  width: 80%;
+  float: right;
+}
+
+
+div {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+
+p {
+  margin: 5px 0 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+details {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f0f4f8;
+  color: #444;
+  font-size: 0.5cm;
+  text-align: left;
+}
+
+details summary {
+  font-weight: bold;
+  color: #0077cc;
+  margin-bottom: 5px;
+}
+
+#dodaj {
+  position: absolute;
+  width: 35%;
+  float: left;
+  margin-left: -5cm;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#dodaj form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#dodaj label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+
+#dodaj input,
+#dodaj select,
+#dodaj textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+
+}
+
+#dodaj input:focus,
+#dodaj select:focus,
+#dodaj textarea:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 6px rgba(0, 119, 204, 0.3);
+  outline: none;
+}
+
+#dodaj textarea {
+  min-height: 100px;
+}
+
+#dodaj button {
+  padding: 12px;
+  background: #0077cc;
+  color: #fff;
+  font-size: 0.5cm;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+#dodaj button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+#wyszukiwarka {
+  display: flex;
+  justify-content: center; 
+  margin: 20px auto;
+  width: 100%;
+}
+
+#searchInput {
+  width: 50%;             
+  padding: 8px;
+  text-align: center;      
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

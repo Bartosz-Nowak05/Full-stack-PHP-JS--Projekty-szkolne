@@ -1,0 +1,96 @@
+
+body {
+    background: linear-gradient(135deg, #d9e4f5, #dbf7d9);
+    font-family: "Verdena", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    margin-top: 4%;
+}
+
+
+form {
+    padding: 1.2cm;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    font-size: 0.55cm;
+    font-weight: 600;
+    color: #2c2c54;
+}
+
+input {
+    height: 0.8cm;
+    width: 6cm;
+    border-radius: 25px;
+    border: 2px solid #6c63ff;
+    padding-left: 12px;
+    font-size: 0.45cm;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #3d35ff;
+    box-shadow: 0 0 8px rgba(61, 53, 255, 0.4);
+}
+
+table, tr, td, th {
+    border-collapse: collapse;
+    padding: 0.5cm;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+table {
+    margin: auto;
+    margin-top: 1cm;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+tr {
+    transition: 0.25s;
+}
+
+tr:hover {
+    background: rgba(108, 99, 255, 0.1);
+}
+
+button {
+    background-color: #6c63ff;
+    border: 2px solid white;
+    color: white;
+    width: 4cm;
+    height: 1.1cm;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.1;
+    background-color: white;
+    color: #6c63ff;
+    border-color: #6c63ff;
+}
+label
+{
+    color: #4d0396;
+}

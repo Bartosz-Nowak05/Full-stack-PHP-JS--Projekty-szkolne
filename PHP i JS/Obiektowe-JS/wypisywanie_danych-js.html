@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let samochod = {
+        marka: "BMW",
+        model: "M3",
+        rok: 1985,
+        wiekSamochodu: function() {
+            let rok_obecny = 2025;
+            return rok_obecny - this.rok;
+        }
+    };
+    document.writeln("marka to ", samochod.marka, "model to ", samochod.model, " i ma ")
+    document.writeln(samochod.wiekSamochodu(), " lat");
+</script>
+
+    
+</body>
+</html>

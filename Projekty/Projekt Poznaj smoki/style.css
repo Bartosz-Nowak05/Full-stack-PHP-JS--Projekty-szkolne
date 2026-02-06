@@ -1,0 +1,52 @@
+*
+{
+    text-align: center;
+    font-family: Georgia;
+}
+header,footer
+{
+    background-color: tomato;
+    color: mistyrose;
+    padding: 10px;
+    clear: both;
+}
+nav
+{
+    width: 20%;
+}
+.blok1,.blok2,.blok3
+{
+    height: 170px;
+    font-size: 200%;
+}
+.blok1
+{
+    background-color: mistyrose;
+}
+main
+{
+    background-color: mistyrose;
+    width: 80%;
+    height: 510px;
+    overflow: auto;
+   
+}
+.section2,.section3
+{
+    display: none;
+}
+table
+{
+    margin: auto;
+    width: 60%;
+    border-style: dashed;
+    border: 1px solid indigo;
+}
+li,button
+{
+    margin: 20px;
+}
+nav,main
+{
+    float: left;
+}

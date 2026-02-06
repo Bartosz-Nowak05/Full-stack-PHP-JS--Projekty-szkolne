@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        kalkulator =
+        {
+            a:5,
+            b:4,
+            dodaj: function()
+            {
+                return this.a + this.b
+            },
+            odejmi: function()
+            {
+                return this.a - this.b
+            },
+            pomnoz: function()
+            {
+                return this.a * this.b
+            },
+            dzielenie: function()
+            {
+                return this.a / this.b
+            }
+        }
+        document.writeln("dodawanie")
+        document.writeln(kalkulator.dodaj());
+        document.writeln("<br>");
+        document.writeln("odejmowanie")
+         document.writeln(kalkulator.odejmi());
+        document.writeln("<br>");
+        document.writeln("mnożenie")
+         document.writeln(kalkulator.pomnoz());
+        document.writeln("<br>");
+        document.writeln("dzielenie")
+        document.writeln(kalkulator.dzielenie())
+    </script>
+    
+</body>
+</html>

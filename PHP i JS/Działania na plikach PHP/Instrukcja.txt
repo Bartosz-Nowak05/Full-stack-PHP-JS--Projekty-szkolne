@@ -1,0 +1,27 @@
+Instrukcje
+Zadanie 1 – Odczyt z pliku
+Polecenie:
+Napisz skrypt PHP, który odczyta zawartość pliku wiadomosc.txt i wyświetli ją w przeglądarce.
+Jeśli plik nie istnieje, skrypt ma wyświetlić komunikat:
+"Plik nie istnieje."
+
+Wskazówka:
+Użyj funkcji file_exists() i file_get_contents().
+
+Zadanie 2 – Zapis do pliku
+Polecenie:
+Napisz skrypt PHP, który pobierze dane od użytkownika z formularza (pole lub pola)
+i zapisze go do pliku notatka.txt.
+Jeśli plik już istnieje, jego zawartość ma zostać nadpisana nowym tekstem.
+
+Wskazówka:
+Użyj funkcji file_put_contents() i metody POST.
+
+Zadanie 3 – Dopisywanie do pliku (log)
+Polecenie:
+Napisz skrypt PHP, który przy każdym wejściu na stronę zapisze do pliku logi.txt
+aktualną datę i godzinę wejścia użytkownika.
+
+Wskazówka:
+Użyj funkcji file_put_contents() z flagą FILE_APPEND oraz date().
+fwrite($plik, "Nowy wpis: " . date("Y-m-d H:i:s") . "\n");

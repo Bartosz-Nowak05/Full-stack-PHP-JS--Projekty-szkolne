@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Example</title>
+</head>
+<body>
+    <script>
+        let kontoBankowe = {
+            saldo: 20,
+            wplacKwota: 400,
+            wyplacKwota: 180,
+
+            pokazSaldo: function() {
+                return this.saldo;
+            },
+            wplac: function() {
+                return this.saldo + this.wplacKwota;
+            },
+            wyplac: function() {
+                return this.saldo - this.wyplacKwota;
+            }
+        };
+
+        document.writeln("to jest twoje saldo: ");
+        document.writeln(kontoBankowe.pokazSaldo());
+        document.writeln("<br>");
+
+        document.writeln("to jest twoje saldo po wpłacie: ");
+        document.writeln(kontoBankowe.wplac());
+        document.writeln("<br>");
+
+        document.writeln("to jest twoje saldo po wypłacie: ");
+        document.writeln(kontoBankowe.wyplac());
+    </script>
+</body>
+</html>

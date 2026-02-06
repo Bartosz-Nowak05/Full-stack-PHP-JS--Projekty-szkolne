@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gałązka Smaku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Gałązka Smaku</h2>
+        <br>
+        <h3>Smak, który dojrzewa w zgodzie z naturą</h3>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#">Strona główna</li></a>
+            <li><a href="#">Oferta</li></a>
+            <li><a href="#">Promocje</li></a>
+            <li><a href="#">Kotntakt</li></a>
+        </ol>
+        <img id="drzewo" src="https://th.bing.com/th/id/R.b2e9c8499144842e0bc9a79b0a3d1c68?rik=nSIK723xbvMxXA&pid=ImgRaw&r=0">
+        <img id="koszyk" src="koszyk.jpg.png">
+        <div id="kropkakoszyk"></div>
+    </nav>
+    <main>
+        
+        <div class="box">
+            <h3>Nasze Produkty</h3>
+            <br>
+              <div id="gallery">
+                <div class="item">
+                    <img src="jabłko.jpg" alt="jabłko">
+                    <p >jabłko</p>
+                    <p>Cena: 3.50 zł</p>
+                    <button onclick="dodaj()">Dodaj do koszyka</button>
+                </div>
+                <div class="item">
+                    <img src="banan.png" alt="banan">
+                    <p >banan</p>
+                    <p>Cena: 4.20 zł</p>
+                    <button onclick="dodaj()">Dodaj do koszyka</button>
+                </div>
+                <div class="item">
+                    <img src="marchewka.jpg" alt="marchewka">
+                    <p >marchewka</p>
+                    <p>Cena: 2.80 zł</p>
+                    <button onclick="dodaj()">Dodaj do koszyka</button>
+                </div>
+            </div>
+            <br>
+              <h4>% Promocje %</h4>
+              <section>
+                <table>
+                    
+                    <tr> <th>Produkt</th>
+                     <th>Cena przed obniżką</th>
+                     <th>Cena po obniżce </th></tr>
+                     <tr>
+                    <td>Mango</td>
+                    <td>2,50zł</td>
+                    <td>1,50zł</td>
+                    </tr>
+                    <tr>
+                    <td>Gruszka</td>
+                    <td>3,90zł</td>
+                    <td>3,00zł</td>
+                    </tr>
+                    <tr>
+                    <td>Pomarańcza</td>
+                    <td>4,50zł</td>
+                    <td>3,70zł</td>
+                    </tr>
+                    <tr>
+                    <td>Winogrona</td>
+                    <td>5,20zł</td>
+                    <td>4,10zł</td>
+                    </tr>
+                    <tr>
+                    <td>Śliwka</td>
+                    <td>3,60zł</td>
+                    <td>2,90zł</td>
+                    </tr>
+                </table>
+              </section>
+        </div>
+        <br>
+        <div class="contact-box">
+  <h3>Formularz Kontaktowy</h3>
+  <form id="form">
+    <label for="name">Imię:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Wiadomość:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <label class="checkbox-container">
+      <input type="checkbox" required>
+      Zgadzam się na przetwarzanie danych kontaktowych
+    </label><br><br>
+
+    <button type="submit">Wyślij</button>
+  </form>
+</div>
+    </main>
+    <footer>
+        <span> Autor: Bartosz Nowak</span>
+        <p id="czas">
+        </p>
+    </footer>
+</body>
+</html>

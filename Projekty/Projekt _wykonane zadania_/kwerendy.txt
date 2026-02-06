@@ -1,0 +1,22 @@
+zapytanie1 :
+
+SELECT `notatki`.`priorytet`, `osoby`.`id` FROM `notatki` , `osoby` WHERE `osoby`.`id` = '3' ORDER BY `notatki`.`priorytet` ASC
+
+zapytanie2
+
+SELECT `notatki`.`nazwa`
+FROM `notatki`
+WHERE `notatki`.`nazwa` LIKE '%na%';
+
+zapytanie3
+
+SELECT `osoby`.`imie`, `notatki`.`nazwa`, `notatki`.`priorytet`
+FROM `osoby`
+	, `notatki`
+WHERE `notatki`.`priorytet` = '5';
+
+zapytanie4
+
+SELECT `osoby`.`imie`, COUNT(`notatki`.id)
+FROM `osoby` LEFT JOIN `notatki`
+ON `osoby`.`id` = `notatki`.`id`;

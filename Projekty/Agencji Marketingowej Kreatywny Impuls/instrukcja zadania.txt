@@ -1,0 +1,126 @@
+Instrukcje
+Projekt polega na zaprojektowaniu, zaimplementowaniu i przetestowaniu prostego serwisu internetowego dla fikcyjnej Agencji Marketingowej "Kreatywny Impuls".
+
+1. Specyfikacja Oprogramowania i Bazy Danych
+A. Baza Danych (4 tabele)
+Zaprojektuj i zaimplementuj bazę danych o nazwie agencja_marketingowa. Baza musi zawierać następujące tabele:
+
+pracownicy
+
+id_pracownika (INT, Klucz główny, Auto-inkrementacja)
+
+imie (VARCHAR)
+
+nazwisko (VARCHAR)
+
+stanowisko (VARCHAR)
+
+data_zatrudnienia (DATE)
+
+uslugi
+
+id_uslugi (INT, Klucz główny, Auto-inkrementacja)
+
+nazwa_uslugi (VARCHAR)
+
+cena_netto (DECIMAL)
+
+opis (TEXT)
+
+klienci
+
+id_klienta (INT, Klucz główny, Auto-inkrementacja)
+
+nazwa_firmy (VARCHAR)
+
+email (VARCHAR)
+
+telefon (VARCHAR)
+
+projekty
+
+id_projektu (INT, Klucz główny, Auto-inkrementacja)
+
+id_klienta (INT, Klucz obcy: klienci.id_klienta)
+
+id_uslugi (INT, Klucz obcy: uslugi.id_uslugi)
+
+status_projektu (VARCHAR, np. 'W trakcie', 'Zakończony', 'Oczekujący')
+
+data_rozpoczecia (DATE)
+
+szacowany_koszt (DECIMAL)
+
+B. Dane Testowe
+Wprowadź do bazy danych co najmniej 5 rekordów do każdej tabeli, zachowując spójność kluczy obcych.
+
+2. Projekt Strony WWW i Interfejs Użytkownika (HTML/CSS)
+A. Wymagania Techniczne
+Utwórz plik index.php (główna strona serwisu).
+
+Zastosuj zewnętrzny arkusz stylów (style.css).
+
+Zastosuj elastyczny układ (RWD - Responsive Web Design) tak, aby strona była czytelna na urządzeniach mobilnych (np. użyj Flexbox lub Media Queries).
+
+B. Układ Strony
+Strona musi składać się z dwóch głównych sekcji:
+
+Nagłówek: Nazwa agencji i logo.
+
+Panel Administratora (Lewa Kolumna):
+
+Lista opcji nawigacyjnych.
+
+Pole do wyszukiwania projektów (interfejs do Zadania 3).
+
+Główna Treść (Prawa Kolumna):
+
+Wyświetlanie wyników z bazy danych (Tabela z Zadania 4).
+
+3. Skrypty i Logika po Stronie Serwera (PHP, SQL)
+A. Moduł Połączenia z Bazą Danych (Klucz)
+Napisz skrypt PHP (np. polaczenie.php), który łączy się z bazą danych agencja_marketingowa. Dołącz ten skrypt do wszystkich innych skryptów PHP wymagających dostępu do bazy.
+
+B. Moduł Wyszukiwania Projektów (Klienci)
+Na stronie index.php zaimplementuj formularz wyszukiwania (w Panelu Administratora), który umożliwi:
+
+Wprowadzenie nazwy firmy klienta.
+
+Po kliknięciu przycisku "Szukaj", skrypt PHP musi bezpiecznie (zapobieganie SQL Injection) wysłać zapytanie do bazy, pobierając:
+
+nazwa_firmy
+
+nazwa_uslugi
+
+status_projektu
+
+szacowany_koszt
+
+Wyniki powinny być wyświetlone w Sekcji Głównej Treści jako tabela HTML.
+
+C. Moduł Dodawania Nowego Klienta
+Utwórz osobny plik (np. dodaj_klienta.php) zawierający formularz, który umożliwia dodanie nowego klienta do tabeli klienci.
+
+Skrypt PHP musi walidować (sprawdzać), czy pola nazwa_firmy i email nie są puste przed wstawieniem danych do bazy.
+
+Po poprawnym dodaniu klienta, wyświetl komunikat sukcesu.
+
+4. Wyświetlanie Danych (HTML, PHP, SQL)
+A. Prezentacja Danych Pracowników
+W sekcji Głównej Treści, w domyślnym widoku (przed wyszukiwaniem), wyświetl listę wszystkich pracowników agencji.
+
+Pobierz z bazy danych (pracownicy) i wyświetl: imie, nazwisko, stanowisko i data_zatrudnienia.
+
+Dane muszą być sformatowane w postaci tabeli HTML z nagłówkami.
+
+B. Obliczenia i Funkcje Agregujące
+W stopce strony (lub pod tabelą pracowników) wyświetl następujące informacje pobrane za pomocą jednego zapytania:
+
+Liczba aktywnych projektów (Status: 'W trakcie').
+
+Średni szacowany koszt wszystkich projektów w bazie.
+
+5. Interaktywność (JavaScript)
+Walidacja Formularza: Dodaj walidację po stronie klienta (JavaScript) do formularza dodawania klienta (dodaj_klienta.php), która sprawdzi, czy wprowadzone pole email zawiera znak @. Jeśli nie, wyświetl alert i uniemożliw przesyłanie formularza.
+
+Efekt Wizualny: Zaimplementuj prosty efekt JS na tabeli w widoku głównym: po kliknięciu na dowolny wiersz pracownika, wiersz ten ma zmienić kolor tła na zielony.

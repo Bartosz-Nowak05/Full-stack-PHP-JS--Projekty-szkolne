@@ -1,0 +1,380 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Franklin Gothic Medium';
+}
+nav
+{
+    width: 100%;
+        padding-top: 1cm;   
+  
+}
+#logo
+{
+    padding: 0.2cm;
+     padding-left: 3cm;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+ header ul
+{
+     margin-left: 30%;
+}
+header li
+{
+    display: inline;
+      padding: 2% 0% 2% 2%;
+      
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 0.6cm;
+    transition: 0.5s ease;
+
+
+}
+
+a:hover
+{
+    border-radius: 3px;
+    padding: 0.5%;
+    box-shadow: 1px 6px  2px rgba(0, 0, 0, 0.479);
+    background-color: black;
+    color: white;
+
+}
+header
+{
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 3cm;
+    background: linear-gradient(white 90%,black);
+}
+/* strony */
+body
+{
+  background:linear-gradient(black 5%,blue,black);
+}
+main > h1
+{
+    padding: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+    color: white;
+
+}
+article
+{
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+    font-size: larger;
+    margin-bottom: 2cm;
+    color: white;
+}
+article li
+{
+    margin-left: 2cm;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 0.5cm;
+    height: 1cm;
+    margin-top: 4cm;
+    
+}
+.mecze
+{
+    text-align: center;
+}
+
+  .mecze {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .mecze h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .mecze p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .mecze p strong {
+    color: #1a73e8;
+  }
+
+  .mecze p:nth-child(4n+1) {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+  }
+    .galeria
+    {
+      padding: 2%;
+      width: 80%;
+      margin: auto;
+      background: #222;
+      border-radius: 20px;
+      border: 1px solid white;
+    }
+  .galeria > img
+  {
+    width: 360px;
+    height: 190px;
+    transition: 0.3s;
+    padding: 4px;
+    border-radius: 10px;
+   
+
+  }
+   .galeria > img:hover
+  {
+    height: auto;
+      transform: scale(1.8);
+  }
+ #statsChart
+ {
+
+  background-color: #f9f9f9;
+  margin: auto;
+  width: 90%;
+  height: 1000px;
+ }
+ table
+ {
+  border: 1px solid white;
+   color: white;
+   border-collapse: collapse;
+   text-align: center;
+   width: 80%;
+   margin: auto;
+ 
+ }
+ td{
+  border: 1px solid white;
+    padding: 2%;
+ }
+ th
+ {
+  border: 1px solid white;
+  padding: 1%;
+  background-color: #222;
+
+ }
+ tr:nth-child(even)
+ {
+  background-color: rgb(100, 100, 100);
+ }
+ .dodaj > form
+ {
+
+color: rgb(0, 0, 0);
+border: 3px solid rgb(0, 51, 255);
+border-radius: 20px;
+text-align: center;
+width: 10cm;
+padding: 2%;
+background-color: #f9f9f9;
+height: auto;
+margin: auto;
+ }
+  .dodaj button
+  {
+    margin-top:1cm ;
+    background-color: rgb(17, 219, 255);
+    border: 1px solid rgb(17, 219, 255);
+    width: 4cm;
+    height: 1cm;
+    color: white;
+    border-radius: 4px ;
+    transition: 0.3s ease;
+  }
+  .dodaj input
+  {
+    width: 6cm;
+    height: 0.7cm;
+    border: 2px solid rgb(17, 219, 255);
+    border-radius: 20px;
+    text-align: center;
+
+  }
+  .dodaj >form> select
+  {
+    width: 6cm;
+    height: 0.7cm;
+    border: 2px solid rgb(17, 219, 255);
+    border-radius: 20px;
+    text-align: center;
+
+  }
+    .dodaj button:hover
+  {
+    scale: 1.2;
+    border: 3px solid blue;
+    color: black;
+  }
+.login
+{
+  float: right;
+  margin-top: -1.5cm;
+  padding-right: 1cm;
+  display: block;
+}
+.login button
+{
+background-color: #1a73e8;
+color: white;
+border: 1px solid #1a73e8;
+padding: 2%;
+width: 3cm;
+margin-top: 0.2cm;
+margin-left: 1.5cm;
+border-radius: 10px;
+transition: 0.5s ease;
+}
+.login button:hover
+{
+  background-color: #222;
+
+}
+.login > h2
+{
+  text-align: center;
+}
+.login  p
+{
+  text-align: center;
+}
+.login input
+{
+  border: 1px solid #1a73e8;
+  height: 0.5cm;
+  border-radius: 20px;
+  text-align: center;
+}
+.kontakt > form {
+  width: 500px; 
+  height: 12cm;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  }
+  .kontakt > form > label
+  {
+    color: white;
+    font-size: 0.5cm;
+  }
+  .kontakt > form input
+  {
+    width: 6cm;
+    padding-left: 0.2cm;
+    height: 0.7cm;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  textarea
+  {
+    border-radius: 20px;
+    padding: 0.2cm;
+    width: 10cm;
+  }
+.kontakt > form > button {
+  background-color: blue;
+  color: white;
+  width: 4cm;
+  height: 1cm;
+  margin-top: 1cm;
+  border: 1px solid blue;
+  border-radius: 2cm;
+  font-size: 0.5cm;
+  transition:  0.3s ease;
+}
+
+.kontakt > form > button:hover {
+  background-color: #1a73e8;
+  scale: 1.1;
+}
+#wiadomosc
+{
+  color: rgb(0, 201, 0);
+  margin: auto;
+  width: 6cm;
+  padding: 2%;
+  font-size: 0.5cm;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 1cm;
+}
+#zawodnicy {
+  width: 90%;
+  padding: 3cm;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.zawodnicy {
+  width: 20%;
+  height: 10cm;
+  padding: 2%;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zawodnicy:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+.search
+{
+  text-align: center;
+  width: 20cm;
+  margin: auto;
+
+}
+.search input
+{
+  margin-top: 1cm;
+  padding: 1%;
+  padding-left: 2%;
+  width: 8cm;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: Impact,sans-serif;
+  letter-spacing: 2px;
+}
+.search input:hover
+{
+  color: #1a73e8;
+}

@@ -1,0 +1,120 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    background-color: white;
+    padding: 0.5%;
+}
+.kontener
+{
+    background-color: #FFE4E1;
+    height: 23cm;
+}
+header
+{
+    padding-top: 1cm;
+    width: 100%;
+    height: 2cm;
+    background-color: #BA6C6C;
+    color: white;
+    text-align: center;
+
+}
+#section_left
+{
+    height: 14cm;
+    width: 20%;
+    background-color: #EF999C;
+}
+#info
+{
+    margin-top: 1cm;
+    margin-left: 1.1cm;
+    height: 1.5cm;
+    border:1px solid red;
+    width: 5cm;
+    text-align: center;
+}
+#info >p
+{
+    display: inline;
+}
+#przerwa
+{
+    word-spacing: 0.2cm;
+}
+.large {
+    font-size: 50px;
+    font-weight: bold;
+    color: darkred;
+}
+.small {
+    font-size: 30px;
+    color: black;
+}
+.container
+{
+    padding-top: 1cm;
+    margin-left: 2cm;
+}
+#section_right
+{
+    float: right;
+    height: 14cm;
+    width: 20%;
+    background-color: #EF999C;
+    text-align: center;
+    margin-top: -14cm;
+    padding-right: 1cm;
+    
+}
+main
+{
+    width: 70%;
+    height: 10cm;
+    margin-top: -13cm;
+    margin-left: 5.6cm;
+    text-align: center;
+}
+
+img
+{
+    width: 5cm;
+    padding: 4px;
+    height: 3cm;
+    box-shadow: 10px 00px 15px rgba(0, 0, 0, 0.5); 
+}
+.photo-grid
+{
+    margin-top: 1.5cm;
+    
+}
+#section_botom
+{
+ 
+    width: 100%;
+    height: 4cm;
+    margin-top: 3.5cm;
+    text-align: center;
+    font-size: 0.5cm;
+}
+ul
+{
+    margin-left: 3cm;
+    margin-top: -3cm;
+    font-size: 20px;
+    list-style: upper-roman;
+}
+footer {
+    width: 100%;
+    background-color: #BA6C6C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2cm;
+}

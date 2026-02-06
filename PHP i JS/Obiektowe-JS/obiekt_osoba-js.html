@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let osoba = {
+            imie:"Jan",
+            nazwisko:"Kowalski",
+            wiek:40,
+            przedstawSię: function() {
+                return "Cześć mam na imie " + this.imie+" "  +this.nazwisko
+                +"i mam " + this.wiek + " lat";
+            }
+    }
+    document.writeln(osoba.przedstawSię());
+    </script>
+    
+</body>
+</html>

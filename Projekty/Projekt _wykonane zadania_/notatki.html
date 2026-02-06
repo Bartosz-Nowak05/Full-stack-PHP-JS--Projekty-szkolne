@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer zadań</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header>
+        <h2>Moje Zadania</h2>
+    </header>
+    <nav><input type="text" placeholder="Dodaj zadanie...">
+        <button type="submit" onclick="klik()">Dodaj</button>
+    </nav>
+
+    <main>
+        <ul>
+            <li>Wyprowadzić psa <button type="submit" onclick="wykonane()">Wykonane</button></li>
+            <li>Gimnastyka <button type="submit" onclick="wykonane()">Wykonane</button></li>
+            <li>Zakupy <button type="submit" onclick="wykonane()">Wykonane</button></li>
+            <li>Spacer z kumplem <button type="submit" onclick="wykonane()">Wykonane</button></li>
+            <li>Odrabianie lekcji z młodszą siostrą <button type="submit" onclick="wykonane()">Wykonane</button></li>
+            <li>Projekt na geografię <button type="submit" onclick="wykonane()">Wykonane</button></li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <h3>Notatki: 0000000</h3>
+    </footer>
+    <aside><img src="obraz.jpg" alt="notatki"></aside>
+
+    <script>
+        function wykonane() {
+            document.querySelectorAll("li").forEach(element => {
+                element.addEventListener("click", () => {
+                    element.style.textDecoration = "line-through";
+                })
+            });
+
+        }
+    </script>
+</body>
+
+</html>

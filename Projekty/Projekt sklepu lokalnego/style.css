@@ -1,0 +1,282 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: Helvetica;
+}
+header
+{
+    background:linear-gradient(#115f00,#55ab4f);
+    color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+header>h3
+{
+    font-style:italic;
+    font-family:Georgia, 'Times New Roman', Times;
+}
+header>h2
+{
+    font-weight: bolder;
+}
+nav {
+    background: linear-gradient(#55ab4f, #115f00);
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+#drzewo
+{
+    width: 200px;
+    margin-left: -22cm;
+    margin-top: -3.15cm;
+}
+#koszyk
+{
+    float: right;
+    width: 70px;
+    margin-top: -1.3cm;
+    padding-right: 3cm;
+    transition: transform 0.3s ease
+}
+#koszyk:hover
+{
+    transform: scale(1.3);
+}
+
+ol {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+}
+li {
+    padding-left: 2cm;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+}
+
+li:hover {
+    transform: scale(1.4); 
+    
+    text-decoration: underline;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    color: rgb(153, 255, 0);
+}
+main
+{
+    background-color:#115f00;
+    width: 100%;
+    height: 48cm;
+    padding-top: 0.5cm;
+}
+.box
+{
+    
+    width: 90%;
+    border-radius: 15px;
+    height: 23cm;
+    border: 10px solid #453027;
+    background-color: #a1705a;
+    margin: auto;
+}
+.box >h3
+{
+    text-align: center;
+    padding-top: 1cm;
+    font-size:40px;
+    color: aliceblue;
+}
+/* gallery */
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1cm;
+}
+
+
+.item {
+    border: 1px solid #ccc;
+    width: 220px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+     box-shadow: 0 6px 12px rgba(0, 0, 4, 0.873);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+.item:hover {
+    transform: scale(1.1);
+    
+}
+button
+{
+    background-color: green;
+    color: aliceblue;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid green;
+}
+button:hover
+{
+    background-color: yellowgreen;
+    color: black;
+}
+h4{
+    text-align: center;
+    
+    font-size: 2cm;
+    color: white;
+    width: 20cm;
+    margin: auto;
+    border: 1px solid red;
+    background-color: red;
+}
+section
+{
+    margin-top:-1cm;
+}
+table {
+  margin: 2cm auto;
+  background-color: #333;
+  border-collapse: collapse;
+  width: 80%;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+td:hover
+{
+    background-color:#55ab4f;
+}
+th:nth-child(2)
+{
+    background-color: #c00000;
+}
+td:nth-child(2)
+{
+    background-color: #c00000;
+}
+
+
+td:nth-child(3) {
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: #55ab4f
+}
+th:nth-child(3)
+{
+    background-color: #55ab4f;
+}
+/* form */
+.contact-box {
+  width: 80%;
+  margin: 2cm auto;
+  background-color: #a1705a;
+  border: 5px solid #453027;
+  border-radius: 15px;
+  padding: 2cm;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.contact-box h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 1cm;
+  color: aliceblue;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #453027;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-container {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+footer
+{
+    background-color: #55ab4f;
+    color: aliceblue;
+    height: 2cm;
+    margin-top: -cm;
+    text-align: center;
+}
+footer>p
+{
+    padding: 30px;
+}
+#kropkakoszyk
+{
+    float: right;
+    background-color: red;
+    width: 20px;
+    color: white;
+    border-radius: 50px;
+}

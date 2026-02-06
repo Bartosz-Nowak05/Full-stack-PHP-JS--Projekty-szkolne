@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    let prostokat = {
+        wysokosc:100,
+        szerokosc:300,
+        obwod: function() {
+            return this.wysokosc + this.szerokosc;
+        },
+        pole: function() {
+            return this.wysokosc * this.szerokosc;
+        }
+    }
+    document.writeln("obwod prostokata wynosi " + prostokat.obwod())
+    document.writeln("<br>")
+     document.writeln("Pole prostokata wynosi " + prostokat.pole())
+    </script>
+    
+</body>
+</html>
