@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "piłkarze";
+$db = "pilkarze";
 $conn = new mysqli($host,$user,$pass,$db);
 if ($conn->connect_error) {
     echo "Błąd połączenia: " . $conn->connect_error;
